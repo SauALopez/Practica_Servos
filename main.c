@@ -145,6 +145,7 @@ int main(void)
 
 
 }
+// Comento par GitHub
 
 void Servo_Base(int Ang){
     float trabajo = (0.01028*Ang)+0.6;
