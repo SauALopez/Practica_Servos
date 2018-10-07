@@ -93,13 +93,13 @@ int main(void)
           // in steps of 1 degree
           Servo_Base(pos);
           Servo_Brazo(pos);
-          //Servo_Mano(pos);
+          Servo_Mano(pos);
           SysCtlDelay(T*SysCtlClockGet()/3);
         }
         for (pos = 180; pos >= 0; pos--) { // goes from 180 degrees to 0 degrees
             Servo_Base(pos);
             Servo_Brazo(pos);
-            //Servo_Mano(pos);
+            Servo_Mano(pos);
             SysCtlDelay(T*SysCtlClockGet()/3);                    // waits 15ms for the servo to reach the position
         }
         //PWMPulseWidthSet(PWM0_BASE,PWM_OUT_3,carga*Load/20);
